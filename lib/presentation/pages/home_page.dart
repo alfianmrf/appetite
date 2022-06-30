@@ -7,6 +7,7 @@ import 'package:appetite/presentation/blocs/blocs.dart';
 import 'package:appetite/presentation/models/models.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:responsive_framework/responsive_framework.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -162,8 +163,8 @@ class _HomePageState extends State<HomePage> {
                             child: GridView.builder(
                               gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
                                 maxCrossAxisExtent: 200,
-                                childAspectRatio: 0.8,
                                 crossAxisSpacing: 15,
+                                mainAxisExtent: 200,
                               ),
                               itemCount: state.filteredMenus.length,
                               itemBuilder: (BuildContext ctx, index) {

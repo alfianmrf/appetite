@@ -19,6 +19,7 @@ class AppColor {
 
   static const Color primary = Color(0xff6c60e1);
   static const Color background = Color(0xffF8F9FF);
+  static const Color backgroundGrey = Color(0xFFF5F5F5);
   static const Color text = Color(0xff58586B);
   static const Color price = Color(0xff32876A);
 }
